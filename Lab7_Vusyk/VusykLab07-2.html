@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Лабораторна робота 7 - Завдання 2</title>
+</head>
+<body bgcolor="#FFF3E0">
+
+<h2 align="center"><font color="#E65100" face="Arial">Завдання 2: Форма з усіма елементами</font></h2>
+
+<center>
+<form action="form_result.html" method="post" target="_blank">
+
+<table border="1" cellpadding="10" bgcolor="#FFFFFF" width="70%">
+
+<!-- Текстове поле -->
+<tr>
+<td colspan="2" bgcolor="#FFE0B2">
+<b>1. Текстове поле (TEXT)</b>
+</td>
+</tr>
+<tr>
+<td>ПІБ:</td>
+<td><input type="text" name="fio" size="40" maxlength="50" value=""></td>
+</tr>
+
+<!-- Текстова область -->
+<tr>
+<td colspan="2" bgcolor="#FFE0B2">
+<b>2. Текстова область (TEXTAREA)</b>
+</td>
+</tr>
+<tr>
+<td>Ваша адреса:</td>
+<td><textarea name="address" rows="3" cols="40" wrap="virtual">Введіть адресу...</textarea></td>
+</tr>
+
+<!-- Список -->
+<tr>
+<td colspan="2" bgcolor="#FFE0B2">
+<b>3. Список (SELECT)</b>
+</td>
+</tr>
+<tr>
+<td>День тижня:</td>
+<td>
+<select name="day" size="1">
+<option value="1" selected>Понеділок</option>
+<option value="2">Вівторок</option>
+<option value="3">Середа</option>
+<option value="4">Четвер</option>
+<option value="5">П'ятниця</option>
+<option value="6">Субота</option>
+<option value="7">Неділя</option>
+</select>
+</td>
+</tr>
+
+<!-- Множинний вибір зі списку -->
+<tr>
+<td>Виберіть кілька мов програмування:</td>
+<td>
+<select name="languages" size="5" multiple>
+<option value="python">Python</option>
+<option value="javascript">JavaScript</option>
+<option value="java">Java</option>
+<option value="cpp">C++</option>
+<option value="php">PHP</option>
+<option value="csharp">C#</option>
+</select>
+</td>
+</tr>
+
+<!-- Прапорці -->
+<tr>
+<td colspan="2" bgcolor="#FFE0B2">
+<b>4. Прапорці (CHECKBOX)</b>
+</td>
+</tr>
+<tr>
+<td>Ваші навички:</td>
+<td>
+<input type="checkbox" name="skill1" value="html" checked> HTML<br>
+<input type="checkbox" name="skill2" value="css"> CSS<br>
+<input type="checkbox" name="skill3" value="js"> JavaScript<br>
+<input type="checkbox" name="skill4" value="php"> PHP<br>
+<input type="checkbox" name="skill5" value="sql"> SQL<br>
+</td>
+</tr>
+
+<!-- Радіокнопки -->
+<tr>
+<td colspan="2" bgcolor="#FFE0B2">
+<b>5. Радіокнопки (RADIO)</b>
+</td>
+</tr>
+<tr>
+<td>Рівень знань:</td>
+<td>
+<input type="radio" name="level" value="beginner" checked> Початковий<br>
+<input type="radio" name="level" value="intermediate"> Середній<br>
+<input type="radio" name="level" value="advanced"> Високий<br>
+<input type="radio" name="level" value="expert"> Експертний<br>
+</td>
+</tr>
+
+<!-- Пароль -->
+<tr>
+<td colspan="2" bgcolor="#FFE0B2">
+<b>6. Поле пароля (PASSWORD)</b>
+</td>
+</tr>
+<tr>
+<td>Введіть пароль:</td>
+<td><input type="password" name="password" size="20" maxlength="15"></td>
+</tr>
+
+<!-- Файл -->
+<tr>
+<td colspan="2" bgcolor="#FFE0B2">
+<b>7. Прикріплення файлу (FILE)</b>
+</td>
+</tr>
+<tr>
+<td>Завантажити файл:</td>
+<td><input type="file" name="userfile" size="40"></td>
+</tr>
+
+<!-- Кнопки -->
+<tr>
+<td colspan="2" bgcolor="#FFE0B2">
+<b>8. Кнопки (BUTTON, SUBMIT, RESET)</b>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value=" Відправити форму ">
+<input type="reset" value=" Очистити форму ">
+<input type="button" value=" Показати дату " onclick="alert('Сьогодні: ' + new Date().toLocaleDateString());">
+</td>
+</tr>
+
+</table>
+
+</form>
+</center>
+
+</body>
+</html>
+
