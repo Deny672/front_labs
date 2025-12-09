@@ -1,0 +1,220 @@
+/* Каскадна таблиця стилів для сайту */
+/* Лабораторна робота №10 */
+/* Автор: Вусик Д.М., група 303-ТН */
+
+/* Стилі для body - загальні налаштування сторінки */
+body {
+    background-image: url('image/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Контейнер для контенту */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+/* Заголовок 1-го рівня */
+h1 {
+    font-weight: bold;
+    text-align: center;
+    color: #1565C0;
+    font-style: normal;
+    font-size: 36pt;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid #1976D2;
+    padding-bottom: 15px;
+}
+
+/* Заголовки 2-го рівня */
+h2 {
+    color: #0277BD;
+    font-size: 24pt;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-left: 5px solid #0288D1;
+    padding-left: 15px;
+}
+
+/* Стилі для параграфів */
+p {
+    text-align: justify;
+    text-indent: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-style: italic;
+    font-size: 14pt;
+    line-height: 1.8;
+    color: #424242;
+}
+
+/* Стилі для посилань */
+/* Не відвідане посилання */
+a:link {
+    color: #0066CC;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/* Активне посилання (під час кліку) */
+a:active {
+    color: #FF6600;
+    text-decoration: none;
+    transform: scale(0.95);
+}
+
+/* Відвідане посилання */
+a:visited {
+    color: #6A1B9A;
+    text-decoration: none;
+}
+
+/* Посилання при наведенні курсору */
+a:hover {
+    color: #CC0000;
+    text-decoration: underline;
+    border-bottom: 2px solid #CC0000;
+}
+
+/* Навігаційне меню */
+.navigation {
+    text-align: center;
+    background-color: #1565C0;
+    padding: 20px;
+    margin: -40px -40px 30px -40px;
+    border-radius: 10px 10px 0 0;
+}
+
+.navigation a {
+    color: white;
+    font-size: 16pt;
+    padding: 10px 20px;
+    margin: 0 10px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    font-style: normal;
+}
+
+.navigation a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #FFEB3B;
+    border-bottom: none;
+}
+
+/* Стилі для зображень */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+}
+
+.img-left {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.img-right {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.img-center {
+    display: block;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Стилі для списків */
+ul, ol {
+    margin-left: 7%;
+    margin-right: 5%;
+    font-style: italic;
+    font-size: 13pt;
+    line-height: 1.6;
+    color: #424242;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #1976D2;
+    font-style: normal;
+    color: #757575;
+    font-size: 11pt;
+}
+
+/* Інформаційний блок */
+.info-box {
+    background-color: #E3F2FD;
+    border-left: 5px solid #1976D2;
+    padding: 20px;
+    margin: 20px 5% 20px 5%;
+    border-radius: 5px;
+}
+
+.info-box p {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Виділений текст */
+.highlight {
+    background-color: #FFF9C4;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-style: normal;
+}
+
+/* Очищення float */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Кнопка */
+.button {
+    display: inline-block;
+    background-color: #1976D2;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0D47A1;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-bottom: none;
+}
+
