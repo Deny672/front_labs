@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Лабораторна робота 9 - Завдання 3</title>
+<style>
+body {
+    font-family: Verdana, sans-serif;
+    background: linear-gradient(to bottom, #E8EAF6, #C5CAE9);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* Клас menu для елементів меню */
+.menu {
+    background-color: #1A237E;
+    color: #FFFFFF;
+    font-size: 16pt;
+    font-weight: bold;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu:hover {
+    background-color: #3F51B5;
+    color: #FFEB3B;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Клас small для інформаційних повідомлень */
+.small {
+    font-size: 10pt;
+    color: #757575;
+    font-style: italic;
+    padding: 8px;
+    background-color: #F5F5F5;
+    border-left: 3px solid #9E9E9E;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+h1 {
+    color: #1A237E;
+    text-align: center;
+    font-size: 32pt;
+    padding: 30px 0;
+    margin: 0;
+    background: linear-gradient(to right, #E8EAF6, #C5CAE9);
+    border-bottom: 4px solid #3F51B5;
+}
+
+.navigation {
+    background-color: #283593;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #5C6BC0;
+}
+
+.content {
+    padding: 30px;
+    min-height: 400px;
+}
+
+.section {
+    margin: 30px 0;
+    padding: 25px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid #E0E0E0;
+}
+
+.section h2 {
+    color: #3F51B5;
+    font-size: 22pt;
+    border-bottom: 2px solid #9FA8DA;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    color: #424242;
+    font-size: 13pt;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+footer {
+    background-color: #1A237E;
+    color: #FFFFFF;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-menu {
+    margin: 20px 0;
+}
+
+.divider {
+    height: 2px;
+    background: linear-gradient(to right, transparent, #5C6BC0, transparent);
+    margin: 20px 0;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    
+    <h1>Завдання 3: Класи MENU та SMALL</h1>
+    
+    <!-- Навігаційне меню з використанням класу menu -->
+    <div class="navigation">
+        <span class="menu">Головна</span>
+        <span class="menu">Про нас</span>
+        <span class="menu">Послуги</span>
+        <span class="menu">Портфоліо</span>
+        <span class="menu">Контакти</span>
+    </div>
+    
+    <!-- Інформаційне повідомлення з використанням класу small -->
+    <div class="content">
+        <div class="small">
+            Поточна адреса сторінки: C:\Users\denis\Desktop\all\projects\front_labs\Lab9_Vusyk\VusykLab09-3.html
+        </div>
+        
+        <div class="small">
+            Автор: Вусик Денис Михайлович, студент групи 303-ТН
+        </div>
+        
+        <div class="section">
+            <h2>Веб-дизайн та розробка</h2>
+            <p>
+                Наша компанія спеціалізується на створенні сучасних веб-сайтів та 
+                веб-додатків. Ми використовуємо найновіші технології та підходи для 
+                створення якісних рішень, які відповідають потребам наших клієнтів. 
+                Команда досвідчених розробників та дизайнерів працює над кожним 
+                проектом з максимальною відповідальністю.
+            </p>
+            
+            <div class="small">
+                Примітка: Всі проекти розробляються з урахуванням принципів 
+                адаптивного дизайну та кросбраузерної сумісності.
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <!-- Додаткове меню в середині сторінки -->
+        <div style="text-align: center; margin: 30px 0;">
+            <h3 style="color: #3F51B5;">Наші послуги:</h3>
+            <div style="margin: 20px 0;">
+                <span class="menu">Frontend</span>
+                <span class="menu">Backend</span>
+                <span class="menu">Mobile Apps</span>
+                <span class="menu">UI/UX Design</span>
+            </div>
+        </div>
+        
+        <div class="small">
+            Оновлено: 09 грудня 2025 року
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="section">
+            <h2>Технології, які ми використовуємо</h2>
+            <p>
+                У своїй роботі ми застосовуємо широкий спектр сучасних технологій: 
+                HTML5, CSS3, JavaScript (React, Vue.js, Angular), Node.js, Python, 
+                PHP, MySQL, MongoDB та багато інших. Вибір технологій залежить від 
+                специфіки проекту та вимог клієнта.
+            </p>
+            
+            <div class="small">
+                Важлива інформація: Всі наші розробки проходять детальне тестування 
+                перед передачею клієнту.
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Чому обирають нас?</h2>
+            <p>
+                Ми пропонуємо індивідуальний підхід до кожного клієнта, гарантуємо 
+                високу якість виконання робіт та дотримання термінів. Наша команда 
+                постійно вдосконалює свої навички та слідкує за новітніми трендами 
+                у веб-розробці. Ми створюємо не просто сайти, а ефективні інструменти 
+                для розвитку вашого бізнесу.
+            </p>
+            
+            <div class="small">
+                Контактна інформація: Email: info@webdev.ua | Телефон: +380 (44) 123-45-67
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin: 40px 0;">
+            <h3 style="color: #3F51B5;">Швидкі посилання:</h3>
+            <div style="margin: 20px 0;">
+                <span class="menu">FAQ</span>
+                <span class="menu">Блог</span>
+                <span class="menu">Кар'єра</span>
+                <span class="menu">Підтримка</span>
+            </div>
+        </div>
+        
+        <div class="small">
+            Дата створення сторінки: 09.12.2025
+        </div>
+        
+        <div class="small">
+            Версія: 1.0.0 | Використані технології: HTML5, CSS3
+        </div>
+        
+    </div>
+    
+    <!-- Футер з додатковим меню та інформацією -->
+    <footer>
+        <div class="footer-menu">
+            <span class="menu">Правила використання</span>
+            <span class="menu">Політика конфіденційності</span>
+            <span class="menu">Карта сайту</span>
+        </div>
+        
+        <div class="small" style="background-color: transparent; border-left: none; color: #B0BEC5;">
+            © 2025 WebDev Studio. Всі права захищені.
+        </div>
+        
+        <div class="small" style="background-color: transparent; border-left: none; color: #B0BEC5;">
+            Розроблено студентом групи 303-ТН Вусиком Д.М. в рамках лабораторної роботи №9
+        </div>
+        
+        <div class="small" style="background-color: transparent; border-left: none; color: #B0BEC5;">
+            Остання зміна: 09 грудня 2025, 22:25
+        </div>
+    </footer>
+    
+</div>
+
+</body>
+</html>
+
