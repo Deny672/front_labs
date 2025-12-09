@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<TITLE>Навігаційна карта</TITLE>
+<meta charset="UTF-8">
+</head>
+<body bgcolor="#E8F5E9">
+<center>
+<h1><font color="#1B5E20" face="Arial">Навігаційна карта</font></h1>
+<p><font size="4" face="Arial">Клацніть на фігурах для переходу до різних розділів</font></p>
+
+<br>
+
+<!-- Створюємо карту з геометричними фігурами -->
+<map name="navigation_map">
+<!-- Трикутник (ліворуч) - Про мене/Домашня сторінка -->
+<area shape="poly" coords="50,80,200,40,310,350,50,350" href="VusykLab01-9.html" title="Про мене - Домашня сторінка" alt="Домашня сторінка">
+
+<!-- Коло (справа вгорі) - Посилання -->
+<area shape="circle" coords="560,140,110" href="VusykLab05-3.html" title="Посилання - Мої гіперпосилання" alt="Мої гіперпосилання">
+
+<!-- Прямокутник (внизу) - Моя Батьківщина -->
+<area shape="rect" coords="180,250,500,400" href="VusykLab06-3.html" title="Моя Батьківщина" alt="Моя Батьківщина">
+</map>
+
+<!-- Застосовуємо карту до зображення -->
+<img src="image/navigation.jpg" width="735" height="420" border="2" usemap="#navigation_map" alt="Навігація">
+
+<br><br>
+<table border="1" cellpadding="10" bgcolor="#C8E6C9">
+<tr>
+<td><font size="3" face="Arial"><b>Трикутник (ліворуч)</b> - Про мене (Домашня сторінка)</font></td>
+</tr>
+<tr>
+<td><font size="3" face="Arial"><b>Коло (справа вгорі)</b> - Посилання (Мої гіперпосилання)</font></td>
+</tr>
+<tr>
+<td><font size="3" face="Arial"><b>Прямокутник (внизу)</b> - Моя Батьківщина</font></td>
+</tr>
+</table>
+
+</center>
+
+</body>
+</html>
+
